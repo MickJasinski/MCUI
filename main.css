@@ -1,0 +1,49 @@
+body {
+    background: black;
+}
+
+.screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.clockwork {
+    width: 300px;
+    background: #f49242;
+    margin-right: 30px;
+    float: left;
+}
+
+.gear {
+    position: relative;
+    top: -195px;
+    left: 98.5px;
+    width: 78px;
+    margin: 0;
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 10000;
+}
+
+.quote {
+    color: #f49242;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
